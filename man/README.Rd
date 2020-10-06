@@ -7,7 +7,7 @@ Overdispersion in Count Data Multiple Regression Analysis
 Log-linear count data regression is one of the most popular techniques for predictive modeling where there is a non-negative discrete quantitative dependent variable. In order to ensure the inferences from the use of count data models are appropriate, researchers may choose between the estimation of a Poisson model and a negative binomial model, and the correct decision for prediction from a count data estimation is directly linked to the existence of overdispersion of the dependent variable, conditional to the explanatory variables. Based on the studies of Cameron and Trivedi (1990, 2013), the \code{overdisp()} command is a contribution to researchers, providing a fast and secure solution for the detection of overdispersion in count data. Another advantage is that the installation of other packages is unnecessary, since the command runs in the basic R language.
 }
 \usage{
-overdisp(x, dependent.position = NULL, predictor.position = NULL)
+overdisp(x, dependent.position = NULL, predictor.position = NULL, sig = NULL)
 }
 \arguments{
   \item{x}{
@@ -18,6 +18,10 @@ A single number that declares the position of the dependent variable in the user
 }
   \item{predictor.position}{
 A number, or a set of numbers, that declares the position of explanatory variables in the dataset.
+}
+
+\item{sig}{
+A number that declares the statistic significance to identify the equidispersion or superdispersion.
 }
 
 }
