@@ -1,8 +1,8 @@
 Package: overdisp
 Type: Package
 Title: Overdispersion in Count Data Multiple Regression Analysis
-Version: 0.1.1
-Authors@R: c(person(given = "Rafael", family = "Freitas Souza", role = "cre", email = "fsrafael@usp.br"), person(given = "Luiz Paulo", family = "Favero", role = "ctb"), person(given = "Patricia", family = "Belfiore", role = "ctb"), person(given = "Hamilton Luiz", family = "Correa", role = "ctb"), person(given = "A. Colin", family = "Cameron", role = "aut"), person(given = "Pravin", family = "Trivedi", role = "aut"))
+Version: 0.1.2
+Authors@R: c(person(given = "Rafael", family = "Freitas Souza", role = "cre", email = "fsrafael@usp.br"), person(given = "Hamilton Luiz", family = "Correa", role = "ctb"), person(given = "A. Colin", family = "Cameron", role = "aut"), person(given = "Pravin", family = "Trivedi", role = "aut"))
 Maintainer: Rafael Freitas Souza <fsrafael@usp.br>
 Description: Detection of overdispersion in count data for multiple regression analysis.
     Log-linear count data regression is one of the most popular techniques for predictive 
@@ -19,14 +19,13 @@ Description: Detection of overdispersion in count data for multiple regression a
     R language.
 License: GPL (>= 2)
 Encoding: UTF-8
-LazyData: true
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2020-10-05 21:52:34 UTC; Rafael
+Packaged: 2023-07-04 14:42:33 UTC; fs-ra
 Author: Rafael Freitas Souza [cre],
-  Luiz Paulo Favero [ctb],
-  Patricia Belfiore [ctb],
   Hamilton Luiz Correa [ctb],
   A. Colin Cameron [aut],
   Pravin Trivedi [aut]
 Repository: CRAN
-Date/Publication: 2020-10-06 04:10:03 UTC
+Date/Publication: 2023-07-04 15:00:02 UTC

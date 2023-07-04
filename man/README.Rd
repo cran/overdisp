@@ -19,11 +19,9 @@ A single number that declares the position of the dependent variable in the user
   \item{predictor.position}{
 A number, or a set of numbers, that declares the position of explanatory variables in the dataset.
 }
-
-\item{sig}{
-A number that declares the statistic significance to identify the equidispersion or superdispersion.
+  \item{sig}{
+Optional. If the argument value is not provided, the 5\% level of statistical significance will be used.
 }
-
 }
 \details{
 The test for detecting overdispersion of count data proposed by Cameron and Trivedi (1990) is based on following equation, where \eqn{H_{0}}  is the equidispersion given by \eqn{Var(Y|X)=E(Y|X)} as follows:
@@ -54,15 +52,13 @@ See also:
 
 Blackburn, M. L. (2015). The Relative Performance of Poisson and Negative Binomial Regression Estimators. Oxford Bulletin of Economics ans Statistics, 77(4), 605-616. <doi:10.1111/obes.12074>.
 
-Favero, L. P., & Belfiore, P. (2019). Data Science for Business and Decision Making. Cambridge, MA: Academic Press Elsevier. ISBN:978-0128112168.
-
 Payne, E. H., Hardin, J. W., Egede, L. E., Ramakrishnan, V., Selassie, A. & Gebregziabher, M. (2015). Approaches for Dealing with Various Sources of Overdispersion in Modeling Count Data: Scale adjustment versus modeling. Statistical Methods in Medical Research, 26(4), 1802-1823. <doi:10.1177/0962280215588569>.
 
 Smith, D & Faddy, M. (2016). Mean and Variance Modeling of Under and Overdispersed Count Data. Journal of Statistical Software, 69(6), 1-23. <doi:10.18637/jss.v069.i06>.
 
 }
 \author{
-Rafael de Freitas Souza, Luiz Paulo Favero, Patricia Belfiore and Hamilton Luiz Correa.
+Rafael de Freitas Souza and Hamilton Luiz Correa.
 }
 \examples{
 overdisp(warpbreaks, dependent.position = 1, predictor.position = 2:3)
